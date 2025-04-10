@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list</title>
+  <link rel="stylesheet" href="/ToDoList/style/to-do-list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&family=Mea+Culpa&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+      <div class="container">
+        <p class="header">To Do list</p>
+        <div class="todo-input-grid">
+          <input type="text" placeholder="To do Name" class="js-name-input name-input" required>
+          <input type="date" class="js-due-date-input due-date-input" required>
+          <button onclick="addtodo();" class="add-button">Add</button>
+        </div>
+  
+        <div class="js-name-output todo-grid"></div>
+      </div>
+  
+      <footer class="footer">
+        &copy; 2025 Dewol Maharjan. All rights reserved.
+      </footer>
+    </div>
+  
+    <script src="/ToDoList/script/to-do-list.js"></script>
+  </body>
+</html>

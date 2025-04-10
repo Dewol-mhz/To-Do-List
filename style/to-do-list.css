@@ -1,0 +1,129 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    background-color: #872341;
+}
+.container{
+    border: none; 
+    padding: 40px;
+    width: 40vw;
+    border-radius: 20px;
+}
+.todo-grid, .todo-input-grid{
+    display: grid;
+    grid-template-columns: 20vw 10vw 10vw;
+    column-gap: 10px;
+    
+}
+.todo-grid{
+    background-color: #BE3144;
+    color: white;
+}
+.todo-input-grid{
+    margin-bottom: 10px;
+}
+.header{
+    font-family: "Playwrite HU", cursive;
+    text-align: center;
+    font-size: 60px;
+    color:rgb(193, 193, 33);
+}
+.delete-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.delete-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-name{
+    text-align: center;
+}
+
+.name-input,
+.due-date-input {
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: 1px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: #09122C;
+  color: white;
+  align-items: center;
+}
+
+
+input::placeholder{
+    text-align: center;
+    color: white;
+}
+
+.due-date-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color-scheme: dark; /* forces white icon on some browsers */
+    background-color: #09122C;
+    color: white;
+    border-radius: 10px;
+    }
+
+.add-button{
+    background-color: #09122C;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(123, 97, 255, 0.3);
+}
+  
+.add-button:hover {
+    background-color: #241d4b;
+    box-shadow: 0 6px 16px rgba(123, 97, 255, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .add-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(123, 97, 255, 0.2);
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+    background-color: #E17564;
+  }
